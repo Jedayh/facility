@@ -1,0 +1,15 @@
+<ion-content>
+	<div class="map-image"></div>
+	<div [class.show-icons]="wasClicked">
+		<div class="image-right-bottom" (click) = "bus()">
+			<img src="assets/imgs/bus.png" class="bus-icon">
+		</div>
+		<div class="image-left-top" (click) = "pharmatie()">
+			<img src="assets/imgs/phar.png" class="phar-icon">
+		</div>
+	</div>
+	<div class="spinner" (click) = "showIcons()">
+	  <div class="double-bounce1"></div>
+	  <div class="double-bounce2"></div>
+	</div>
+</ion-content>
